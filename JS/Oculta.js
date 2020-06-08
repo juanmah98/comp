@@ -75,21 +75,21 @@ function eleccion()
     {
         descargapdfelect();
     }
-    if(document.getElementById("ContBic")=='block')
+    if(document.getElementById("ContBic").style.display =='block')
     {
-        descargapdf()
+        descargapdfbici();
     }
-    if(document.getElementById("ContInd")=='block')
+    if(document.getElementById("ContInd").style.display =='block')
     {
-
+        descargapdfindu();
     }
-    if(document.getElementById("ContMueble")=='block')
+    if(document.getElementById("ContMueble").style.display =='block')
     {
-
+        descargapdfmueble()
     }
-    if(document.getElementById("ContOtro")=='block')
+    if(document.getElementById("ContOtro").style.display =='block')
     {
-
+        descargapdfotros()
     }
 }
 
@@ -222,8 +222,9 @@ function Siguiente(){
 
                                 
     if(i==0)
-    {   eleccion();
-        //descargapdfelect();
+    {   
+        eleccion();
+        
     }                    
     
 

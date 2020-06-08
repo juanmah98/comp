@@ -1,5 +1,5 @@
 
-function descargapdfelect(){
+function descargapdfbici(){
     
     var pdf= new jsPDF('p','pt','a4');
     pdf.setFont("calibri", "bold");
@@ -27,14 +27,20 @@ function descargapdfelect(){
         dom2=document.getElementById("domicilio2").value  ;
         num2 = document.getElementById("telefono2").value;
 
-    var mar=mod=color=nserie=estado=accesorio=" ";
+    var tipo,marca,modelo,color,extras,cuadro,tallecuadro,tallecubierta,material,cambio,frenos,horquilla=" ";
 
-    mar=document.getElementById("marca").value;
-    mod=document.getElementById("modelo").value;
-    color=document.getElementById("color").value;
-    nserie=document.getElementById("n_serie").value;
-    estado=document.getElementById("estado").value;
-    accesorio=document.getElementById("accesorio").value;
+    tipo=document.getElementById("tipo2").value;
+    marca=document.getElementById("marca2").value;
+    modelo=document.getElementById("modelo2").value;
+    color=document.getElementById("color2").value;
+    extras=document.getElementById("extras2").value;
+    cuadro=document.getElementById("cuadro2").value;
+    tallecuadro=document.getElementById("Tallecuadro2").value;
+    tallecubierta=document.getElementById("Tallecubierta2").value;
+    material=document.getElementById("material2").value;
+    cambio=document.getElementById("cambio2").value;
+    frenos=document.getElementById("frenos2").value;
+    horquilla=document.getElementById("Horquilla2").value;
     
    var efectivo=trueque=" ";
    efectivo=document.getElementById("bxVenta").value;
@@ -69,21 +75,26 @@ function descargapdfelect(){
 
     pdf.setFontSize(15);
     
-    pdf.text(40,245," TIPO DE ARTICULO SELECCIONADO: Electronico" );
+    pdf.text(40,245," TIPO DE ARTICULO SELECCIONADO: Bicicleta" );
     pdf.text(40,265," DETALLES DEL ARTICULO:" );
 
     pdf.setFontSize(13);
     pdf.setFont("calibri", "regular");
-    pdf.text(50,285," Marca: " + mar );
-    pdf.text(50,300," Modelo: " + mod );
-    pdf.text(50,315," Color: " + color );
-    pdf.text(50,330," Nº de Serie: " + nserie );
-    pdf.text(50,345," Estado: " + estado );
-    if(document.getElementById("SI").checked!=false)
-    {
-        pdf.text(50,360," Accesorio: " + accesorio );
+    pdf.text(50,285," Tipo: " + tipo );
+    pdf.text(50,300," Marca: " + marca );
+    pdf.text(50,315," Modelo: " + modelo );
+    pdf.text(50,330," Color: " + color );
+    pdf.text(50,345," Extras: " + extras );
+    pdf.text(50,360," Cuadro: " + cuadro );
 
-    }else pdf.text(50,360," Accesorio: NO "  );
+    pdf.text(335,285," Talle Cuadro: " + tallecuadro );
+    pdf.text(335,300," Talle Cubiertas: " + tallecubierta );
+    pdf.text(335,315," Material: " + material );
+    pdf.text(335,330," Cambios: " + cambio );
+    pdf.text(335,345," Frenos: " + frenos );
+    pdf.text(335,360," Horquilla: " + horquilla );
+
+   
 
     pdf.setFont("calibri", "bold");
     if(document.getElementById("rbVenta").checked!=false)

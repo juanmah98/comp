@@ -1,5 +1,5 @@
 
-function descargapdfelect(){
+function descargapdfotros(){
     
     var pdf= new jsPDF('p','pt','a4');
     pdf.setFont("calibri", "bold");
@@ -27,14 +27,10 @@ function descargapdfelect(){
         dom2=document.getElementById("domicilio2").value  ;
         num2 = document.getElementById("telefono2").value;
 
-    var mar=mod=color=nserie=estado=accesorio=" ";
+    var otro=" ";
 
-    mar=document.getElementById("marca").value;
-    mod=document.getElementById("modelo").value;
-    color=document.getElementById("color").value;
-    nserie=document.getElementById("n_serie").value;
-    estado=document.getElementById("estado").value;
-    accesorio=document.getElementById("accesorio").value;
+    otro=document.getElementById("txtOtro").value;
+    
     
    var efectivo=trueque=" ";
    efectivo=document.getElementById("bxVenta").value;
@@ -69,21 +65,13 @@ function descargapdfelect(){
 
     pdf.setFontSize(15);
     
-    pdf.text(40,245," TIPO DE ARTICULO SELECCIONADO: Electronico" );
+    pdf.text(40,245," TIPO DE ARTICULO SELECCIONADO: Otros" );
     pdf.text(40,265," DETALLES DEL ARTICULO:" );
 
     pdf.setFontSize(13);
     pdf.setFont("calibri", "regular");
-    pdf.text(50,285," Marca: " + mar );
-    pdf.text(50,300," Modelo: " + mod );
-    pdf.text(50,315," Color: " + color );
-    pdf.text(50,330," Nº de Serie: " + nserie );
-    pdf.text(50,345," Estado: " + estado );
-    if(document.getElementById("SI").checked!=false)
-    {
-        pdf.text(50,360," Accesorio: " + accesorio );
-
-    }else pdf.text(50,360," Accesorio: NO "  );
+    pdf.text(50,285," Detalles: " + otro );
+    
 
     pdf.setFont("calibri", "bold");
     if(document.getElementById("rbVenta").checked!=false)
