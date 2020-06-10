@@ -70,29 +70,41 @@ function RecargarOtro(){
 
 
 function eleccion()
-{       
+{
+    i=0;
     if (document.getElementById("ContenidoElectronico").style.display =='block')
     {
         descargapdfelect();
+        i++;
     }
     if(document.getElementById("ContBic").style.display =='block')
     {
         descargapdfbici();
+        i++;
     }
     if(document.getElementById("ContInd").style.display =='block')
     {
         descargapdfindu();
+        i++;
     }
     if(document.getElementById("ContMueble").style.display =='block')
     {
         descargapdfmueble()
+        i++;
     }
     if(document.getElementById("ContOtro").style.display =='block')
     {
         descargapdfotros()
+        i++;
+    }
+    if(i!=0){
+        alert("Descargando comprobante...");
+        Recarga();
     }
 }
-
+function Recarga(){
+    location.reload();
+}
 
 
 
@@ -133,6 +145,12 @@ function Canje(){
 }
 
 //-------------- Siguiene ------------------
+function myFunction() {
+    var r=confirm("Confirmar envio de formulario...");
+    if(r==true){
+        Siguiente();
+    }
+}
 
 function Siguiente(){
   var i=0;
@@ -224,11 +242,6 @@ function Siguiente(){
     if(i==0)
     {   
         eleccion();
-        
-    }                    
-    
-
-
-
+    }
 
 }
