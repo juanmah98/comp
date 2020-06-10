@@ -34,4 +34,51 @@
         width: 100%;
         background-color: red;
     }
+
+    .cont input[type=text],input[type=number]{
+        width: 50%;
+        height: 3%;
+        padding: 3%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .main{
+        width: 100%;
+        
+    }
+    .top{
+
+        width: 100%;
+        font-size: 0.7rem;;
+    }
+    .title{
+       
+        font-size: 1rem;
+    }
+
+    .crear .bt{
+        
+        font-size: 150%;
+        
+        margin-top: 2%;
+        width: 50%;
+    }
+    h1{
+        font-size: 2rem;
+        color: red;
+    }
+    
+    .header{
+        width: 100%;
+        background-color: red;
+    }
+    .cont input[type=text],input[type=number]{
+        width: 50%;
+        height: 3%;
+        padding: 3%;
+        margin: auto;
+    }
 }
