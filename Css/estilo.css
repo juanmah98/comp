@@ -3,7 +3,13 @@
     --fondo: #2b2b2b;
 }
 
-
+* {
+    margin:  auto;
+    padding:  0;
+    box-sizing: border-box;
+   
+    
+}
 
 body{
     background: var(--fondo);
