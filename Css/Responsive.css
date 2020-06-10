@@ -11,11 +11,17 @@
     .top{
 
         width: 100%;
-        font-size: 0.9rem;;
+        font-size: 1rem;;
+       
     }
     .title{
-       
+        
         font-size: 1.5rem;
+    }
+    .naveg ul li a{
+        display: block;
+        padding: .2rem;
+        border-radius: 5%;
     }
 
     .crear .bt{
@@ -36,7 +42,7 @@
     }
 
     .cont input[type=text],input[type=number]{
-        width: 50%;
+        width: 70%;
         height: 3%;
         padding: 3%;
         margin: auto;
@@ -52,6 +58,7 @@
         font-size: 30px;    
         
     }
+    
 
     
 }
@@ -65,11 +72,17 @@
     .top{
 
         width: 100%;
-        font-size: 0.6rem;;
+        font-size: 0.7rem;;
     }
     .title{
        
         font-size: 0.9rem;
+    }
+
+    .naveg ul li a{
+        display: block;
+        padding: .2rem;
+        border-radius: 5%;
     }
 
     .crear .bt{
@@ -89,7 +102,7 @@
         background-color: red;
     }
     .cont input[type=text],input[type=number]{
-        width: 50%;
+        width: 70%;
         height: 3%;
         padding: 3%;
         margin: auto;
@@ -102,7 +115,8 @@
     }
     .tit{
         
-        font-size: 24px;    
+        font-size: 22px; 
+        width: 80%;
         
     }
     
