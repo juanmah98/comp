@@ -74,6 +74,7 @@ function descargapdfotros(){
     pdf.text(50,285," Prodcuto: " + cat );
     pdf.text(50,300," Detalles: " + otro );
     
+    
 
     pdf.setFont("calibri", "bold");
     if(document.getElementById("rbVenta").checked!=false)
