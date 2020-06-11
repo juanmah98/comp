@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="Css/MenuSocial.css">
         <link rel="stylesheet" href="Css/font.css">
         <link rel="stylesheet" href="Css/Responsive.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
         <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
         <script src="jspdf/dist/jspdf.min.js"></script>
@@ -27,7 +28,7 @@
                         <li><a href="#" onclick="location.href='index.html'">Inicio </a></li>
                         <li><a href="#"class="activo">Nuevo</a></li>
                         <li><a href="#Info">informacion</a></li>
-                        <li><a href="#">Contaco</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -198,17 +199,19 @@
                                 <script src="JS/Oculta.js"></script>
                                 
                                 <section id="ContOtro">
-                                    <textarea placeholder="Descripción" id="txtOtro"></textarea>
+                                    <a>Producto</a>
+                                    <input type="text" size="30" maxlength="45" placeholder="Producto" id="Producto5">  
+                                    <textarea placeholder="Descripción" id="txtOtro" class="otros"></textarea>
                                 </section>
                             </li>
                         </ul>
                         
                     </div>
                     
-                    <input type="button" class="bt" id="btnSig" value="Guardar Datos" onclick="myFunction()">
+                    <input type="button" class="bt" id="btnSig" value="Guardar Datos" onclick="Siguiente()">
                     
                 </div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 
                 <script src="JS/DescargaPDF.js"></script>
                 <script src="JS/pdfelectronico.js"></script>
@@ -223,23 +226,24 @@
                     PAGINA DEL EFECTO REVISAR 
                     https://desarrollofrontend.com/efecto-slide-vertical-o-scroll-con-css3/ 
                 -->
-                <div class="efecto" id="Info">
-                    <a name="INFORMACION" class="titu">INFORMACION</a>
-                    <br>
-                    <br>
-                    <a class="relleno">
-                        Esta pagina tiene como objetivo acentar la compra y venta de productos usados/nuevos de personas independientes de comercios. 
-                        Brindando un documento PDF para ambas partes con la finalidad de demostrar dicha transaccion ante cualquier problema legal.
-                        La pagina guardara una copia de la operacion realizada como respaldo del mismo.
-                    </a>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    
-                </div>
+                <footer >
+                    <div class="efecto" id="Info">
+                        <a name="INFORMACION" class="title">INFORMACION</a>
+                        <br>
+                        <br>
+                        <a class="relleno">
+                            Esta pagina tiene como objetivo acentar la compra y venta de productos usados/nuevos de personas independientes de comercios. 
+                            Brindando un documento PDF para ambas partes con la finalidad de demostrar dicha transaccion ante cualquier problema legal.
+                            La pagina guardara una copia de la operacion realizada como respaldo del mismo.
+                        </a>
+                    </div>
+                    <br><br>
+                </footer>
             </form>
         </main>
     </div>
-        
-
+    
+    
     </body>
 
 </html>

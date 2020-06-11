@@ -71,36 +71,365 @@ function RecargarOtro(){
 
 function eleccion()
 {
-    i=0;
+    var l=0;
     if (document.getElementById("ContenidoElectronico").style.display =='block')
     {
-        descargapdfelect();
-        i++;
-    }
+        if(document.getElementById("marca").value,document.getElementById("modelo").value,document.getElementById("color").value,
+        document.getElementById("n_serie").value,document.getElementById("estado").value == "")
+        {
+            document.getElementById("marca").style.background="#ffcaca" ;
+            document.getElementById("marca").style.borderColor="red" ;
+
+            document.getElementById("modelo").style.background="#ffcaca" ;
+            document.getElementById("modelo").style.borderColor="red" ;
+
+            document.getElementById("color").style.background="#ffcaca" ;
+            document.getElementById("color").style.borderColor="red" ;
+
+            document.getElementById("n_serie").style.background="#ffcaca" ;
+            document.getElementById("n_serie").style.borderColor="red" ;
+
+            document.getElementById("estado").style.background="#ffcaca" ;
+            document.getElementById("estado").style.borderColor="red" ;
+            
+            Swal.fire(
+                'Algo salio mal',
+                'Complete la informacion requerida',
+                'Recuadro rojo'
+              )
+        }
+        else{
+            document.getElementById("marca").style.background="white" ;
+            document.getElementById("marca").style.borderColor="#00000000"  ;
+
+            document.getElementById("modelo").style.background="white" ;
+            document.getElementById("modelo").style.borderColor="#00000000"  ;
+
+            document.getElementById("color").style.background="white" ;
+            document.getElementById("color").style.borderColor="#00000000"  ;
+
+            document.getElementById("n_serie").style.background="white" ;
+            document.getElementById("n_serie").style.borderColor="#00000000"  ;
+
+            document.getElementById("estado").style.background="white" ;
+            document.getElementById("estado").style.borderColor="#00000000"  ;
+
+            /*var r=confirm("Confirmar envio de formulario...");
+            if(r==true){
+            //Siguiente();
+            descargapdfelect(); l++;*/
+
+            Swal.fire({
+                title: 'Confirme envio de formulario',
+                text: "Esta seguro que desea continuar?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confirmar'
+              }).then((result) => {
+                if (result.value) {
+                  Swal.fire(
+                    'Formulario enviado',
+                    'Descargando PDF',
+                    'success'
+                    
+                  )
+                  descargapdfelect();
+                }
+              })
+     } 
+            
+}
+        
+    
+
+    
     if(document.getElementById("ContBic").style.display =='block')
     {
-        descargapdfbici();
-        i++;
+        var l=0;
+    
+    
+        if(document.getElementById("tipo2").value,document.getElementById("marca2").value,document.getElementById("modelo2").value,
+        document.getElementById("color2").value,document.getElementById("cuadro2").value,document.getElementById("Tallecuadro2").value,
+        document.getElementById("Tallecubierta2").value,document.getElementById("material2").value,document.getElementById("cambio2").value,
+        document.getElementById("frenos2").value,document.getElementById("Horquilla2").value == "")
+        {
+            document.getElementById("tipo2").style.background="#ffcaca" ;
+            document.getElementById("tipo2").style.borderColor="red" ;
+
+            document.getElementById("marca2").style.background="#ffcaca" ;
+            document.getElementById("marca2").style.borderColor="red" ;
+
+            document.getElementById("modelo2").style.background="#ffcaca" ;
+            document.getElementById("modelo2").style.borderColor="red" ;
+
+            document.getElementById("color2").style.background="#ffcaca" ;
+            document.getElementById("color2").style.borderColor="red" ;
+
+            document.getElementById("cuadro2").style.background="#ffcaca" ;
+            document.getElementById("cuadro2").style.borderColor="red" ;
+
+            document.getElementById("Tallecuadro2").style.background="#ffcaca" ;
+            document.getElementById("Tallecuadro2").style.borderColor="red" ;
+
+            document.getElementById("Tallecubierta2").style.background="#ffcaca" ;
+            document.getElementById("Tallecubierta2").style.borderColor="red" ;
+
+            document.getElementById("material2").style.background="#ffcaca" ;
+            document.getElementById("material2").style.borderColor="red" ;
+
+            document.getElementById("cambio2").style.background="#ffcaca" ;
+            document.getElementById("cambio2").style.borderColor="red" ;
+
+            document.getElementById("frenos2").style.background="#ffcaca" ;
+            document.getElementById("frenos2").style.borderColor="red" ;
+
+            document.getElementById("Horquilla2").style.background="#ffcaca" ;
+            document.getElementById("Horquilla2").style.borderColor="red" ;
+            
+            Swal.fire(
+                'Algo salio mal',
+                'Complete la informacion requerida',
+                'Recuadro rojo'
+              )
+        }
+        else{
+            document.getElementById("tipo2").style.background="white" ;
+            document.getElementById("tipo2").style.borderColor="#00000000"  ;
+
+            document.getElementById("marca2").style.background="white" ;
+            document.getElementById("marca2").style.borderColor="#00000000"  ;
+
+            document.getElementById("modelo2").style.background="white" ;
+            document.getElementById("modelo2").style.borderColor="#00000000"  ;
+
+            document.getElementById("color2").style.background="white" ;
+            document.getElementById("color2").style.borderColor="#00000000"  ;
+
+            document.getElementById("cuadro2").style.background="white" ;
+            document.getElementById("cuadro2").style.borderColor="#00000000"  ;
+
+            document.getElementById("Tallecuadro2").style.background="white" ;
+            document.getElementById("Tallecuadro2").style.borderColor="#00000000"  ;
+
+            document.getElementById("Tallecubierta2").style.background="white" ;
+            document.getElementById("Tallecubierta2").style.borderColor="#00000000"  ;
+
+            document.getElementById("material2").style.background="white" ;
+            document.getElementById("material2").style.borderColor="#00000000"  ;
+
+            document.getElementById("cambio2").style.background="white" ;
+            document.getElementById("cambio2").style.borderColor="#00000000"  ;
+
+            document.getElementById("frenos2").style.background="white" ;
+            document.getElementById("frenos2").style.borderColor="#00000000"  ;
+
+            document.getElementById("Horquilla2").style.background="white" ;
+            document.getElementById("Horquilla2").style.borderColor="#00000000"  ;
+
+            /*var r=confirm("Confirmar envio de formulario...");
+            if(r==true){
+            //Siguiente();
+            descargapdfelect(); l++;*/
+
+            Swal.fire({
+                title: 'Confirme envio de formulario',
+                text: "Esta seguro que desea continuar?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confirmar'
+              }).then((result) => {
+                if (result.value) {
+                  Swal.fire(
+                    'Formulario enviado',
+                    'Descargando PDF',
+                    'success'
+                    
+                  )
+                  descargapdfbici();
+                }
+              })
+      
+       
+        
     }
+}
     if(document.getElementById("ContInd").style.display =='block')
     {
-        descargapdfindu();
-        i++;
+        if(document.getElementById("tipo3").value,document.getElementById("marca3").value,document.getElementById("Talle3").value,
+        document.getElementById("color3").value== "")
+        {
+            document.getElementById("tipo3").style.background="#ffcaca" ;
+            document.getElementById("tipo3").style.borderColor="red" ;
+
+            document.getElementById("marca3").style.background="#ffcaca" ;
+            document.getElementById("marca3").style.borderColor="red" ;
+
+            document.getElementById("Talle3").style.background="#ffcaca" ;
+            document.getElementById("Talle3").style.borderColor="red" ;
+
+            document.getElementById("color3").style.background="#ffcaca" ;
+            document.getElementById("color3").style.borderColor="red" ;
+
+           
+            
+            Swal.fire(
+                'Algo salio mal',
+                'Complete la informacion requerida',
+                'Recuadro rojo'
+              )
+        }
+        else{
+            document.getElementById("tipo3").style.background="white" ;
+            document.getElementById("tipo3").style.borderColor="#00000000"  ;
+
+            document.getElementById("marca3").style.background="white" ;
+            document.getElementById("marca3").style.borderColor="#00000000"  ;
+
+            document.getElementById("Talle3").style.background="white" ;
+            document.getElementById("Talle3").style.borderColor="#00000000"  ;
+
+            document.getElementById("color3").style.background="white" ;
+            document.getElementById("color3").style.borderColor="#00000000"  ;
+
+
+            Swal.fire({
+                title: 'Confirme envio de formulario',
+                text: "Esta seguro que desea continuar?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confirmar'
+              }).then((result) => {
+                if (result.value) {
+                  Swal.fire(
+                    'Formulario enviado',
+                    'Descargando PDF',
+                    'success'
+                    
+                  )
+                  descargapdfindu();
+                }
+              })
+        }
     }
     if(document.getElementById("ContMueble").style.display =='block')
     {
-        descargapdfmueble()
-        i++;
+        if(document.getElementById("TipodeMueble4").value,document.getElementById("Material4").value,document.getElementById("Color4").value,
+        document.getElementById("Dimenciones4").value,document.getElementById("Estado4").value== "")
+        {
+            document.getElementById("TipodeMueble4").style.background="#ffcaca" ;
+            document.getElementById("TipodeMueble4").style.borderColor="red" ;
+
+            document.getElementById("Material4").style.background="#ffcaca" ;
+            document.getElementById("Material4").style.borderColor="red" ;
+
+            document.getElementById("Color4").style.background="#ffcaca" ;
+            document.getElementById("Color4").style.borderColor="red" ;
+
+            document.getElementById("Dimenciones4").style.background="#ffcaca" ;
+            document.getElementById("Dimenciones4").style.borderColor="red" ;
+
+            document.getElementById("Estado4").style.background="#ffcaca" ;
+            document.getElementById("Estado4").style.borderColor="red" ;
+
+
+                       
+            Swal.fire(
+                'Algo salio mal',
+                'Complete la informacion requerida',
+                'Recuadro rojo'
+              )
+        }
+        else{
+            document.getElementById("TipodeMueble4").style.background="white" ;
+            document.getElementById("TipodeMueble4").style.borderColor="#00000000"  ;
+
+            document.getElementById("Material4").style.background="white" ;
+            document.getElementById("Material4").style.borderColor="#00000000"  ;
+
+            document.getElementById("Color4").style.background="white" ;
+            document.getElementById("Color4").style.borderColor="#00000000"  ;
+
+            document.getElementById("Dimenciones4").style.background="white" ;
+            document.getElementById("Dimenciones4").style.borderColor="#00000000"  ;
+
+            document.getElementById("Estado4").style.background="white" ;
+            document.getElementById("Estado4").style.borderColor="#00000000"  ;
+
+            Swal.fire({
+                title: 'Confirme envio de formulario',
+                text: "Esta seguro que desea continuar?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confirmar'
+              }).then((result) => {
+                if (result.value) {
+                  Swal.fire(
+                    'Formulario enviado',
+                    'Descargando PDF',
+                    'success'
+                    
+                  )
+                  descargapdfmueble()
+                }
+              })
+        }
+        
+       
     }
     if(document.getElementById("ContOtro").style.display =='block')
     {
-        descargapdfotros()
-        i++;
+        if(document.getElementById("txtOtro").value== "")
+        {
+            document.getElementById("txtOtro").style.background="#ffcaca" ;
+            document.getElementById("txtOtro").style.borderColor="red" ;
+
+                       
+            Swal.fire(
+                'Algo salio mal',
+                'Complete la informacion requerida',
+                'Recuadro rojo'
+              )
+        }
+        else{
+            document.getElementById("txtOtro").style.background="white" ;
+            document.getElementById("txtOtro").style.borderColor="#00000000"  ;
+
+
+            Swal.fire({
+                title: 'Confirme envio de formulario',
+                text: "Esta seguro que desea continuar?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confirmar'
+              }).then((result) => {
+                if (result.value) {
+                  Swal.fire(
+                    'Formulario enviado',
+                    'Descargando PDF',
+                    'success'
+                    
+                  )
+                  descargapdfotros()
+                }
+              })
+        }
+        
+        
     }
-    if(i!=0){
-        alert("Descargando comprobante...");
-        Recarga();
-    }
+    //if(l!=0){
+   //    alert("Descargando comprobante...");
+  //      Recarga();
+   // }
 }
 function Recarga(){
     location.reload();
@@ -145,12 +474,13 @@ function Canje(){
 }
 
 //-------------- Siguiene ------------------
-function myFunction() {
+
+/*function myFunction() {
     var r=confirm("Confirmar envio de formulario...");
     if(r==true){
         Siguiente();
     }
-}
+}*/
 
 function Siguiente(){
   var i=0;
@@ -238,6 +568,12 @@ function Siguiente(){
                                     document.getElementById("telefono2").style.borderColor="#00000000"  ;
                                     }
 
+
+
+    if(document.getElementById("ContBic").style.display =='block')
+    {
+
+    }
                                 
     if(i==0)
     {   
