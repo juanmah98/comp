@@ -59,7 +59,7 @@
 	display: flex;
 }
 .icon-whatsapp:hover {
-	padding-right: 8em;
+	padding-right: 3em;
 	border-radius: 1rem 0 0 1rem;
 	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
 }

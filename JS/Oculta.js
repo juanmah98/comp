@@ -132,15 +132,26 @@ function eleccion()
                   Swal.fire(
                     'Formulario enviado',
                     'Descargando PDF',
-                    'success'
+                    'success' 
                     
                   )
                   descargapdfelect();
-                  Recarga();
+                  
+                  
                 }
-              })
-     } 
+            })
             
+            
+                       
+            
+        } 
+        
+        
+           
+     
+        
+       
+          
 }
         
     
@@ -148,7 +159,7 @@ function eleccion()
     
     if(document.getElementById("ContBic").style.display =='block')
     {
-        var l=0;
+        
     
     
         if(document.getElementById("tipo2").value,document.getElementById("marca2").value,document.getElementById("modelo2").value,
@@ -251,7 +262,7 @@ function eleccion()
                     
                   )
                   descargapdfbici();
-                  Recarga();
+                  
                 }
               })
       
@@ -315,7 +326,7 @@ function eleccion()
                     
                   )
                   descargapdfindu();
-                  Recarga();
+                 
                 }
               })
         }
@@ -381,7 +392,7 @@ function eleccion()
                     
                   )
                   descargapdfmueble()
-                  Recarga();
+                  
                 }
               })
         }
@@ -430,7 +441,7 @@ function eleccion()
                     
                   )
                   descargapdfotros()
-                  Recarga();
+                  
                 }
               })
         }
@@ -441,9 +452,11 @@ function eleccion()
    //    alert("Descargando comprobante...");
   //      Recarga();
    // }
+  
 }
 function Recarga(){
-    location.reload();
+    setTimeout(location.reload(),3000);
+    
 }
 
 

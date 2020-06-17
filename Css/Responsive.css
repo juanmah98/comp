@@ -69,6 +69,12 @@
         font-size: 1.4rem;
     
     }
+    .Beta{
+        color: red;
+        margin-left: -250px;
+        margin-top: -12px;
+        font-size: 15px;
+    }
 
     
 }
@@ -139,5 +145,12 @@
         font-size: 1.4rem;
     
     }
+    .Beta{
+        color: red;
+        margin-left: -250px;
+        margin-top: -12px;
+        font-size: 15px;
+    }
+    
     
 }

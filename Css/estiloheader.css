@@ -20,6 +20,14 @@ header nav a.activo{
     justify-content: space-between;
     align-items: center;
 }
+
+.Beta{
+    color: red;
+    margin-left: -45px;
+    
+    font-size: 25px;
+    
+}
 .title{
     color: rgb(255, 187, 0);
     font-family: 'Anton', sans-serif;
