@@ -7,3 +7,4 @@
 	mail($destino,"Formulario",$contenido);
 	header("Location:../Principal.html");
 	?>
+

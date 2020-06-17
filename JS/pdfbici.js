@@ -119,13 +119,13 @@ function descargapdfbici(){
     pdf.text(95,498, ape + " "+ nom);
     pdf.setFont("calibri", "bold");
     pdf.text(80, 500,"_______________________");
-    pdf.text(95,515, "Firma del Comprador");
+    pdf.text(95,515, "Firma del Vendedor");
 
     pdf.setFont("calibri", "regular");
     pdf.text(335,498, ape2 + " "+ nom2);
     pdf.setFont("calibri", "bold");
     pdf.text(320, 500,"_______________________");
-    pdf.text(335,515, "Firma del Vendedor");
+    pdf.text(335,515, "Firma del Comprador");
 
 
   
