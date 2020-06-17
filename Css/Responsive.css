@@ -23,6 +23,7 @@
         padding: .2rem;
         border-radius: 5%;
     }
+   
 
     .crear .bt{
         
@@ -101,6 +102,8 @@
         border-radius: 5%;
     }
 
+    
+    
     .crear .bt{
         
         font-size: 150%;
@@ -147,7 +150,7 @@
     }
     .Beta{
         color: red;
-        margin-left: -150px;
+        margin-left: -50px;
         margin-top: -12px;
         font-size: 15px;
     }
